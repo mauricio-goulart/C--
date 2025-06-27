@@ -8,7 +8,8 @@ using namespace std;
 
 int main()
 {
-
+    
+    //Tipos de dados
     float altura;
     int cep;
     int idade = 20;
