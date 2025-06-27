@@ -17,7 +17,7 @@ int soma(int a, int &b)
 
 int main()
 {
-    int b = 4; //Utilizando o & na chamada da função vincula o valor de lá.
+    int b = 4; //Utilizando o & na chamada da função vincula o valor de lá. 
     int n = soma(2,b);
 
     cout << n << endl;
