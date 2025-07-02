@@ -26,13 +26,5 @@ int main()
 
     cout << s << endl;
 
-
-    
-
-
-    
-    
-
-
     return 0;
 }
