@@ -14,7 +14,7 @@ int fat(int num)
     
 }
 
-int main()
+ int main()
 {
     int n, fatorial;
 
