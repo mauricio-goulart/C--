@@ -16,7 +16,5 @@ int main()
 
     cout << "f(" << a << ") = " << x << endl;
     
-
-
     return 0;
 }
