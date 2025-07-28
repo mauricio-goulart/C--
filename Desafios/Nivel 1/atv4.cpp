@@ -26,8 +26,6 @@ int main()
         cout << "Quer repetir?: ";
         cin >> cond;
 
-
-
     } while (cond == "sim");
     
 
