@@ -26,6 +26,8 @@ int main()
     cin >> tamanho;
     
     int* vetor = new int[tamanho];
+
+    delete [] vetor;
     
     return 0;
     
