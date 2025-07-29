@@ -3,7 +3,7 @@ Ponteiros
 */
 
 #include <iostream>
-#include <cstddef>
+#include <cstddef> //NULL
 
 using namespace std;
 
