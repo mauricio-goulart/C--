@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    
+    //Alocação estatica
     int vet[4];
     int vet2[] = {1,2,3};
     
@@ -18,6 +18,14 @@ int main()
     {
         cout << vet2[i] << " ";
     }
+    
+    //Alocação dinamica
+    int tamanho;
+    
+    cout << "Tamanho = ";
+    cin >> tamanho;
+    
+    int* vetor = new int[tamanho];
     
     return 0;
     
