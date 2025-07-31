@@ -22,7 +22,7 @@ int main()
     //Alocação dinamica
     int tamanho;
     
-    cout << "Tamanho = ";
+    cout << endl << "Tamanho = ";
     cin >> tamanho;
     
     int* vetor = new int[tamanho];
