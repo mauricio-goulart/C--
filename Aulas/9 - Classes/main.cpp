@@ -21,11 +21,16 @@ class carro
 {
     private:
     
-        int ano;
+        int ano, chassi;
         float valor,km;
 
 
     public:
+
+        carro(int chassi = -1)
+        {
+            this->chassi = chassi;
+        }
 
         void setAno(int a)
         {
