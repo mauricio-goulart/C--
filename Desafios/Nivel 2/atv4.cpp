@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    
     int* p1 = new int;
     int* p2 = new int;
     float* media = new float;
@@ -17,4 +18,7 @@ int main()
     *media = (*p1 + *p2)/ 2;
 
     cout << "media = " << *media;
+
+    return 0;
+
 }
