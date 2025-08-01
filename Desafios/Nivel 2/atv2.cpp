@@ -47,5 +47,8 @@ int main()
     
     cout << "Soma = " << soma << endl;
     
+    delete[] n;
+
+    return 0;
         
 }
