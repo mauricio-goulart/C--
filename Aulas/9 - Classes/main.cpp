@@ -17,6 +17,28 @@ class propaganda
         }
 };
 
+class carro
+{
+    private:
+    
+        int ano;
+        float valor,km;
+}
+
+    public:
+
+        void setAno(int a)
+        {
+            this->ano = a;
+            cout << "Ano do carro setado: " << ano << endl;
+        }
+
+        int getAno()
+        {
+            return ano;
+        }
+
+
 int main()
 {
 
