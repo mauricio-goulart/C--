@@ -23,14 +23,13 @@ class carro
     
         int ano;
         float valor,km;
-}
+
 
     public:
 
         void setAno(int a)
         {
             this->ano = a;
-            cout << "Ano do carro setado: " << ano << endl;
         }
 
         int getAno()
@@ -38,14 +37,36 @@ class carro
             return ano;
         }
 
+        void setValor(float v)
+        {
+            this->valor = v;
+        }
 
+        float getValor()
+        {
+            return valor;
+        }
+
+        void setKm(float k)
+        {
+            this->km = k;
+        }
+
+        float getKm()
+        {
+            return km;
+
+};
 int main()
 {
 
     propaganda globo;
-
     globo.setDuracao(30);
 
+    carro parati;
+
+    parati.setAno(1992);
+    cout << "Ano do carro: " << parati.getAno() << endl;
 
     return 0;
 }
