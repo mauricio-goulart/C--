@@ -20,6 +20,13 @@ int main()
             cout << "[" << i + 1 << "] = ";
             cin >> vet[i];
         }
+
+        for (int i = 0; i < n1; i++)
+        {
+            cout << vet[i] << " ";
+        }
+
+        delete[] vet;
         
         cout << "Deseja continuar? (sim/nao) ";
         cin >> cond;
