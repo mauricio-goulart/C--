@@ -55,7 +55,7 @@ pilha::remover()
 
 pilha::get_tamanho()
 {
-
+    return tamanho;
 }
 
 pilha::imprimir()
@@ -64,7 +64,8 @@ pilha::imprimir()
     
     for (int i = 0; i < tamanho; i++)
     {
-        /* code */
+        cout << estrutura[i] << " ";
     }
-    
+
+    cout << "]" << endl;
 }
