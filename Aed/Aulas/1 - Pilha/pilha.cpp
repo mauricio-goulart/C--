@@ -14,17 +14,17 @@ pilha::~pilha() //Destrutor
     delete[] estrutura; 
 }
 
-pilha::pilha_cheia()
+bool pilha::pilha_cheia()
 {
     return tamanho == max_itens;
 }
 
-pilha::pilha_vazia()
+bool pilha::pilha_vazia()
 {
     return tamanho == 0;
 }
 
-pilha::inserir()
+void pilha::inserir(tipo_item item)
 {
     if (pilha_cheia())
     {
@@ -38,29 +38,30 @@ pilha::inserir()
     }
 }
 
-pilha::remover()
+tipo_item pilha::remover()
 {
     if (pilha_vazia())
     {
         cout << "Pilha vazia!" << endl;
-        return 0;
+        return -2;
     }
     else
     {
-        return estrutura[tamanho - 1];
         tamanho--;
+        return estrutura[tamanho];
+        
     }
     
 }
 
-pilha::get_tamanho()
+int pilha::get_tamanho()
 {
     return tamanho;
 }
 
-pilha::imprimir()
+void pilha::imprimir()
 {
-    cout << "Pilha: [";
+    cout << "Pilha: [ ";
     
     for (int i = 0; i < tamanho; i++)
     {
