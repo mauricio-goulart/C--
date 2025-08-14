@@ -26,10 +26,11 @@ int main()
         cout << "[6] - Print " << endl;
         cout << "[7] - Search " << endl;
         cout << "[-1] - Exit " << endl << endl;
+        cout << " ---------------------------- " << endl << endl;
         cout << "Option: ";
         cin >> menu_option;
 
-        cout << endl << " ---------------------------- " << endl << endl;
+        
 
 
 
