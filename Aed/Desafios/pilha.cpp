@@ -62,11 +62,15 @@ type_item stack::pop()
 
 void stack::clear()
 {
+    cout << "Items removed: ";
+
     while (size != 0)
     {
         size--;
-        cout << "Itens removidos: " << endl << structure[size] << endl; 
+        cout << structure[size] << " " ; 
     }
+
+    cout << endl;
     
 }
 
@@ -83,7 +87,7 @@ type_item stack::top()
     
 }
 
-type_item stack::peak()
+type_item stack::bottom()
 {
     if (Is_empty())
     {
@@ -105,22 +109,23 @@ void stack::print()
 {
     if (Is_empty())
     {
-        
+        return;
     }
     else
     {
-        cout << "Pilha: ";
+        cout << "Stack: ";
         for (int i = 0; i < size; i++)
         {
             cout << structure[i] << " ";
         }
         
+        cout << endl;
     }
 }
 
-type_item stack::search(type_item item)
+int stack::search(type_item item)
 {
-    int indice = -1;
+    int index = -1;
 
     if (Is_empty())
     {
@@ -132,7 +137,7 @@ type_item stack::search(type_item item)
         {
             if (structure[i] == item)
             {
-               indice = i;
+               index = i;
                break;
             }
             
@@ -140,13 +145,13 @@ type_item stack::search(type_item item)
         
     }
 
-    if (indice == -1)
+    if (index == -1)
     {
         return -1;
     }
     
     else
     {
-        return indice;
+        return index;
     }
 }
