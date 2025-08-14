@@ -22,7 +22,7 @@ class stack
 
         int size();
         void print();
-        void search(type_item item);
+        type_item search(type_item item);
 
         bool is_full();
         bool is_empty();
