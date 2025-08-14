@@ -18,11 +18,11 @@ class stack
         void clear();
 
         type_item top();
-        type_item peak();
+        type_item bottom();
 
         int get_size();
         void print();
-        type_item search(type_item item);
+        int search(type_item item);
 
         bool is_full();
         bool Is_empty();
