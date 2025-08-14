@@ -70,7 +70,7 @@ void pilha::clear()
     
 }
 
-type_item pilha::top();
+type_item pilha::top()
 {
     if (is_empty())
     {
