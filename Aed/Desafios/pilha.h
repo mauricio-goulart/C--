@@ -6,7 +6,7 @@ class stack
     private:
 
         int size;
-        int* structure = new int[max_items];
+        int* structure;
 
     public:
 
@@ -17,8 +17,8 @@ class stack
         type_item pop();
         void clear();
 
-        void top();
-        void peak();
+        type_item top();
+        type_item peak();
 
         int size();
         void print();
