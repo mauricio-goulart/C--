@@ -3,23 +3,23 @@
 
 using namespace std;
 
-pilha::pilha()
+stack::stack()
 {
     this->size = 0;
     this->structure = new int[max_items];
 }
 
-pilha::~pilha()
+stack::~stack()
 {
     delete[] structure;
 }
 
-bool pilha::is_full()
+bool stack::is_full()
 {
     return size == max_items;
 }
 
-bool pilha::is_empty()
+bool stack::Is_empty()
 {
     if (size == 0)
     {
@@ -31,7 +31,7 @@ bool pilha::is_empty()
     
 }
 
-void pilha::push(type_item item)
+void stack::push(type_item item)
 {
     if (is_full())
     {
@@ -41,14 +41,14 @@ void pilha::push(type_item item)
     {
         structure[size] = item;
         size++;
-        cout << "Item insert: " << item; << endl;
+        cout << "Item insert: " << item << endl;
     }
     
 }
 
-type_item pilha::pop()
+type_item stack::pop()
 {
-    if (is_empty())
+    if (Is_empty())
     {
         return -1;
     }
@@ -60,7 +60,7 @@ type_item pilha::pop()
     
 }
 
-void pilha::clear()
+void stack::clear()
 {
     while (size != 0)
     {
@@ -70,9 +70,9 @@ void pilha::clear()
     
 }
 
-type_item pilha::top()
+type_item stack::top()
 {
-    if (is_empty())
+    if (Is_empty())
     {
         return -1;
     }
@@ -83,9 +83,9 @@ type_item pilha::top()
     
 }
 
-type_item pilha::peak()
+type_item stack::peak()
 {
-    if (is_empty())
+    if (Is_empty())
     {
         return -1;
     }
@@ -96,20 +96,20 @@ type_item pilha::peak()
     
 }
 
-int size()
+int stack::get_size()
 {
     return size;
 }
 
-void pilha::print()
+void stack::print()
 {
-    if (is_empty())
+    if (Is_empty())
     {
         
     }
     else
     {
-        cout << "Pilha: "
+        cout << "Pilha: ";
         for (int i = 0; i < size; i++)
         {
             cout << structure[i] << " ";
@@ -118,11 +118,11 @@ void pilha::print()
     }
 }
 
-type_item pilha::search(type_item item)
+type_item stack::search(type_item item)
 {
     int indice = -1;
 
-    if (is_empty())
+    if (Is_empty())
     {
         
     }
@@ -142,7 +142,7 @@ type_item pilha::search(type_item item)
 
     if (indice == -1)
     {
-        return -1
+        return -1;
     }
     
     else
