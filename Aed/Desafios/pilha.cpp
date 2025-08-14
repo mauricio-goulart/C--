@@ -41,7 +41,7 @@ void stack::push(type_item item)
     {
         structure[size] = item;
         size++;
-        cout << "Item insert: " << item << endl;
+        cout << "Sucess! Item insert: " << item << endl;
     }
     
 }
