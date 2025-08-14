@@ -20,12 +20,12 @@ class stack
         type_item top();
         type_item peak();
 
-        int size();
+        int get_size();
         void print();
         type_item search(type_item item);
 
         bool is_full();
-        bool is_empty();
+        bool Is_empty();
 
 
 };
