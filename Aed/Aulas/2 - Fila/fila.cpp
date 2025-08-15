@@ -18,7 +18,7 @@ queue::~queue()
 
 bool queue::is_full()
 {
-    return last - firts ==
+    return last - firts == max_items
 }
 
 bool queue::is_empty()
