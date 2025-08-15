@@ -10,8 +10,8 @@ class queue
 
     public:
 
-    quene();
-    ~quene();
+    queue();
+    ~queue();
 
     bool is_full();
     bool is_empty();
