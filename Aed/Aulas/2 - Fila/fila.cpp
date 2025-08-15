@@ -28,7 +28,16 @@ bool queue::is_empty()
 
 void queue::push(type_item item)
 {
+    if (is__full()
+    {
+        cout << "Fail! Queue is full" << endl;
 
+    }
+    else
+    {
+        
+    }
+    
 }
 
 type_item queue::pop()
