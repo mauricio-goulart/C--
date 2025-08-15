@@ -3,7 +3,7 @@
 
 using namespace std;
 
-motor::motor(int ano = -1, int cadastro = -1, float valor = 0.0)
+motor::motor(int ano, int cadastro, float valor)
 {
     this->ano = ano;
     this->cadastro = cadastro;
