@@ -8,7 +8,7 @@ queue::queue()
     this->first = 0;
     this->last = 0;
     
-    this->queue_array = new type_item[max_items]
+    this->queue_array = new type_item[max_items];
 }
 
 queue::~queue()
@@ -18,7 +18,7 @@ queue::~queue()
 
 bool queue::is_full()
 {
-    return last - firts == max_items
+    return last - first == max_items;
 }
 
 bool queue::is_empty()
@@ -28,7 +28,7 @@ bool queue::is_empty()
 
 void queue::push(type_item item)
 {
-    if (is__full()
+    if (is_full())
     {
         cout << "Fail! Queue is full" << endl;
 
@@ -51,7 +51,7 @@ type_item queue::pop()
     }
     else
     {
-        first++
+        first++;
 
         return queue_array[(first-1) % max_items];
     }
@@ -62,7 +62,7 @@ void queue::print()
 {
     cout << "Queue: ";
 
-    for (int i = first; i < ultimo; i++)
+    for (int i = first; i < last; i++)
     {
         cout << queue_array[i % max_items] << " ";
     }
