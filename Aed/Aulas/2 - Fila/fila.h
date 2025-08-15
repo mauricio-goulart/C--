@@ -1,5 +1,5 @@
 typedef int type_item;
-const int max_items = 100;
+const int max_items = 4;
 
 class queue
 {
@@ -19,8 +19,5 @@ class queue
     void push(type_item item);
     type_item pop();
     void print();
-
-    
-
-    
+ 
 };      
