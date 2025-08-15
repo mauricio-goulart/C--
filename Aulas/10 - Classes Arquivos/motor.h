@@ -7,7 +7,7 @@ private:
 
 public:
 
-    motor(int ano, int cadastro, float valor);
+    motor(int ano = -1, int cadastro = -1, float valor = 0.0);
 
     void setAno(int ano);
 
@@ -20,3 +20,4 @@ public:
     void setValor(float valor);
     
     float getValor();
+};
