@@ -35,17 +35,38 @@ void queue::push(type_item item)
     }
     else
     {
-        
+        queue_array[last % max_items] = item;
+        last++;
     }
     
 }
 
 type_item queue::pop()
 {
+    if (is_empty())
+    {
+        cout << "Fail! Queue is empty";
 
+        return -1;
+    }
+    else
+    {
+        first++
+
+        return queue_array[(first-1) % max_items];
+    }
+    
 }
 
 void queue::print()
 {
+    cout << "Queue: ";
 
+    for (int i = first; i < ultimo; i++)
+    {
+        cout << queue_array[i % max_items] << " ";
+    }
+
+    cout << endl;
+    
 }
